@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046D37BB2242A7C700E5E3DC /* HNMathExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D37BA2242A7C700E5E3DC /* HNMathExpression.swift */; };
 		0489C4D122426F550050D5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489C4D022426F550050D5C7 /* AppDelegate.swift */; };
 		0489C4D322426F550050D5C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489C4D222426F550050D5C7 /* ViewController.swift */; };
 		0489C4D622426F550050D5C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0489C4D422426F550050D5C7 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046D37BA2242A7C700E5E3DC /* HNMathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNMathExpression.swift; sourceTree = "<group>"; };
 		0489C4CD22426F550050D5C7 /* HNMathExpression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNMathExpression.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0489C4D022426F550050D5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0489C4D222426F550050D5C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				0489C4D022426F550050D5C7 /* AppDelegate.swift */,
 				0489C4D222426F550050D5C7 /* ViewController.swift */,
+				046D37BA2242A7C700E5E3DC /* HNMathExpression.swift */,
 				0489C4D422426F550050D5C7 /* Main.storyboard */,
 				0489C4D722426F570050D5C7 /* Assets.xcassets */,
 				0489C4D922426F570050D5C7 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046D37BB2242A7C700E5E3DC /* HNMathExpression.swift in Sources */,
 				0489C4D322426F550050D5C7 /* ViewController.swift in Sources */,
 				0489C4D122426F550050D5C7 /* AppDelegate.swift in Sources */,
 			);
