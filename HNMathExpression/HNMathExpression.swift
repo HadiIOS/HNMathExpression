@@ -8,6 +8,42 @@
 
 import Foundation
 
+enum HNMathExpressionError: Error {
+    case outOfRange
+    case noClosingParenthesis
+    case moreDecimalsThanItShould
+    case unexpectedEnd
+    case unexpectedCharacter
+    case divisionByZero
+    case unhandledError
+}
+
+extension HNMathExpressionError {
+    
+    var message: String {
+        return self.getMessage()
+    }
+
+    private func getMessage() -> String {
+        switch self {
+        case .divisionByZero:
+            return "Error: Unable to divide by zero"
+        case .moreDecimalsThanItShould:
+            return "Error: Found more than one decimal"
+        case.noClosingParenthesis:
+            return "Error: Unexpected Format; missing ')'"
+        case .outOfRange:
+            return "Error: Unexpected Format"
+        case .unexpectedCharacter:
+            return "Error: Unexpected Format; undefined character"
+        case .unexpectedEnd:
+            return "Error: Unexecpted Format"
+        case .unhandledError:
+            return "Error"
+        }
+    }
+}
+
 class HNMathExpression {
     let expression: String
     
@@ -30,20 +66,8 @@ class HNMathExpression {
     }
 }
 
-enum HNMathExpressionError: Error {
-    case outOfRange
-    case noClosingParenthesis
-    case moreDecimalsThanItShould
-    case unexpectedEnd
-    case unexpectedCharacter
-    case divisionByZero
-    case unhandledError
-}
-
 fileprivate class HNParser {
     
-    
-        
     let expression: String
     var index: Int = 0
     

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C274B22452D34008E1BFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C274A22452D34008E1BFA /* Extensions.swift */; };
+		040C275022453603008E1BFA /* KeypadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C274E22453603008E1BFA /* KeypadCollectionViewCell.swift */; };
+		040C275122453603008E1BFA /* KeypadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040C274F22453603008E1BFA /* KeypadCollectionViewCell.xib */; };
+		04690D81224419F800D5379B /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04690D80224419F800D5379B /* CalculatorButton.swift */; };
+		04690D8322451E6300D5379B /* HNCalKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04690D8222451E6300D5379B /* HNCalKeypad.swift */; };
+		04690D8522452AEF00D5379B /* HNCalKeypad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04690D8422452AEF00D5379B /* HNCalKeypad.xib */; };
 		046D37BB2242A7C700E5E3DC /* HNMathExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046D37BA2242A7C700E5E3DC /* HNMathExpression.swift */; };
 		0489C4D122426F550050D5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489C4D022426F550050D5C7 /* AppDelegate.swift */; };
 		0489C4D322426F550050D5C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489C4D222426F550050D5C7 /* ViewController.swift */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040C274A22452D34008E1BFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		040C274E22453603008E1BFA /* KeypadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadCollectionViewCell.swift; sourceTree = "<group>"; };
+		040C274F22453603008E1BFA /* KeypadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeypadCollectionViewCell.xib; sourceTree = "<group>"; };
+		04690D80224419F800D5379B /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		04690D8222451E6300D5379B /* HNCalKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNCalKeypad.swift; sourceTree = "<group>"; };
+		04690D8422452AEF00D5379B /* HNCalKeypad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HNCalKeypad.xib; sourceTree = "<group>"; };
 		046D37BA2242A7C700E5E3DC /* HNMathExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNMathExpression.swift; sourceTree = "<group>"; };
 		0489C4CD22426F550050D5C7 /* HNMathExpression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNMathExpression.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0489C4D022426F550050D5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +88,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040C274922452D0D008E1BFA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				04690D80224419F800D5379B /* CalculatorButton.swift */,
+				04DEFB1C22482E1300DB1C27 /* HNCalScreen */,
+				04690D8622452AF500D5379B /* HNCalKeypad */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		040C27522245360B008E1BFA /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				040C274E22453603008E1BFA /* KeypadCollectionViewCell.swift */,
+				040C274F22453603008E1BFA /* KeypadCollectionViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		04690D8622452AF500D5379B /* HNCalKeypad */ = {
+			isa = PBXGroup;
+			children = (
+				04690D8222451E6300D5379B /* HNCalKeypad.swift */,
+				04690D8422452AEF00D5379B /* HNCalKeypad.xib */,
+				040C27522245360B008E1BFA /* cells */,
+			);
+			path = HNCalKeypad;
+			sourceTree = "<group>";
+		};
+		047EFA1C22440A0600116284 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				040C274A22452D34008E1BFA /* Extensions.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		0489C4C422426F550050D5C7 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +155,8 @@
 				0489C4D722426F570050D5C7 /* Assets.xcassets */,
 				0489C4D922426F570050D5C7 /* LaunchScreen.storyboard */,
 				0489C4DC22426F570050D5C7 /* Info.plist */,
+				040C274922452D0D008E1BFA /* Components */,
+				047EFA1C22440A0600116284 /* Extras */,
 			);
 			path = HNMathExpression;
 			sourceTree = "<group>";
@@ -126,6 +177,13 @@
 				0489C4F222426F570050D5C7 /* Info.plist */,
 			);
 			path = HNMathExpressionUITests;
+			sourceTree = "<group>";
+		};
+		04DEFB1C22482E1300DB1C27 /* HNCalScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HNCalScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +290,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04690D8522452AEF00D5379B /* HNCalKeypad.xib in Resources */,
+				040C275122453603008E1BFA /* KeypadCollectionViewCell.xib in Resources */,
 				0489C4DB22426F570050D5C7 /* LaunchScreen.storyboard in Resources */,
 				0489C4D822426F570050D5C7 /* Assets.xcassets in Resources */,
 				0489C4D622426F550050D5C7 /* Main.storyboard in Resources */,
@@ -259,9 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04690D8322451E6300D5379B /* HNCalKeypad.swift in Sources */,
+				040C274B22452D34008E1BFA /* Extensions.swift in Sources */,
 				046D37BB2242A7C700E5E3DC /* HNMathExpression.swift in Sources */,
 				0489C4D322426F550050D5C7 /* ViewController.swift in Sources */,
 				0489C4D122426F550050D5C7 /* AppDelegate.swift in Sources */,
+				04690D81224419F800D5379B /* CalculatorButton.swift in Sources */,
+				040C275022453603008E1BFA /* KeypadCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

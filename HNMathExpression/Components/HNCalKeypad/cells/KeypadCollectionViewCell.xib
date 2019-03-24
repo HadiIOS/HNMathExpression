@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KeypadCollectionViewCell" id="gTV-IL-0wX" customClass="KeypadCollectionViewCell" customModule="HNMathExpression" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K37-8F-usm">
+                        <rect key="frame" x="74" y="15.5" width="124" height="124"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Sf-fU-fxc">
+                            <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORA-bv-CUc">
+                                    <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="BD2-pL-qW4">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="124"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <vibrancyEffect>
+                                        <blurEffect style="light"/>
+                                    </vibrancyEffect>
+                                </visualEffectView>
+                            </subviews>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aq-Xg-YFk" customClass="CalculatorButton" customModule="HNMathExpression" customModuleProvider="target">
+                        <rect key="frame" x="74" y="15.5" width="124" height="124"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3aq-Xg-YFk" secondAttribute="height" multiplier="1:1" id="ebA-MO-7Bj"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="o2n-28-hJH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                        <state key="normal" title="1234567890">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="btnDidClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="VuC-9l-zsI"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3aq-Xg-YFk" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.8" id="161-b5-efC"/>
+                <constraint firstItem="K37-8F-usm" firstAttribute="centerX" secondItem="3aq-Xg-YFk" secondAttribute="centerX" id="HR0-el-AhA"/>
+                <constraint firstItem="K37-8F-usm" firstAttribute="width" secondItem="3aq-Xg-YFk" secondAttribute="width" id="Hla-X6-R5v"/>
+                <constraint firstItem="K37-8F-usm" firstAttribute="centerY" secondItem="3aq-Xg-YFk" secondAttribute="centerY" id="JkW-Ui-Hwf"/>
+                <constraint firstItem="K37-8F-usm" firstAttribute="height" secondItem="3aq-Xg-YFk" secondAttribute="height" id="UQB-ng-neJ"/>
+                <constraint firstItem="3aq-Xg-YFk" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="kVT-PU-yR5"/>
+                <constraint firstItem="3aq-Xg-YFk" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="yWg-4S-Qsz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="272" height="155"/>
+            <connections>
+                <outlet property="button" destination="3aq-Xg-YFk" id="jma-Jl-DRD"/>
+                <outlet property="visualEffectView" destination="K37-8F-usm" id="6PR-m7-fIx"/>
+            </connections>
+            <point key="canvasLocation" x="153.59999999999999" y="108.39580209895054"/>
+        </collectionViewCell>
+    </objects>
+</document>
