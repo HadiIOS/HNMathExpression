@@ -92,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				04690D80224419F800D5379B /* CalculatorButton.swift */,
-				04DEFB1C22482E1300DB1C27 /* HNCalScreen */,
 				04690D8622452AF500D5379B /* HNCalKeypad */,
 			);
 			path = Components;
@@ -177,13 +176,6 @@
 				0489C4F222426F570050D5C7 /* Info.plist */,
 			);
 			path = HNMathExpressionUITests;
-			sourceTree = "<group>";
-		};
-		04DEFB1C22482E1300DB1C27 /* HNCalScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HNCalScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

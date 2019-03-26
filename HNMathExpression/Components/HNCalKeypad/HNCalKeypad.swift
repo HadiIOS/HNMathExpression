@@ -20,8 +20,9 @@ class HNCalKeypad: UIView, UICollectionViewDelegate, UICollectionViewDataSource,
          .one,   .two,   .three, .plus,
          .zero,  .dot,   .neg,   .equal]
     
+    @IBOutlet weak private var collectionViewTopLayout: NSLayoutConstraint!
     @IBOutlet weak private var collectionView: UICollectionView!
-    @IBOutlet var contentView: UIView!
+    @IBOutlet private var contentView: UIView!
     
     weak var delegate: HNCalKeypadDelegate?
     
@@ -54,6 +55,15 @@ class HNCalKeypad: UIView, UICollectionViewDelegate, UICollectionViewDataSource,
         layout.minimumInteritemSpacing = 0
         layout.itemSize = CGSize(width: self.frame.width / 4, height: self.frame.height / 5)
         self.collectionView.collectionViewLayout = layout
+        
+        self.collectionView.performBatchUpdates(nil) { (completed) in
+            if completed {
+                let height = self.collectionView.frame.height - self.collectionView.contentSize.height
+                if height > 0 {
+                    self.collectionViewTopLayout.constant = -(height)
+                }
+            }
+        }
     }
     
     //MARK: KeypadCollectionCellDelegate
@@ -78,7 +88,6 @@ class HNCalKeypad: UIView, UICollectionViewDelegate, UICollectionViewDataSource,
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: KeypadCollectionViewCell.IDENTIFIER, for: indexPath) as! KeypadCollectionViewCell
         cell.delegate = self
         cell.setupCell(keypads[indexPath.row])
-        
         return cell
     }
     

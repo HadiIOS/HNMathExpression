@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HNCalKeypad" customModule="HNMathExpression" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="cEm-N1-zJf" id="MCl-84-I5b"/>
+                <outlet property="collectionViewTopLayout" destination="qJl-cH-TAz" id="wGd-ZK-XIy"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="0rM-OL-pm3"/>
             </connections>
         </placeholder>
